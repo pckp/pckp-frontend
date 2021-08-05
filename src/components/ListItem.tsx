@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "scss/modules/ListItem.module.scss"
 
 interface Props {
     name: string;
@@ -6,31 +7,32 @@ interface Props {
     version: string;
     downloads: number;
     size: number;
+    added_at: string;
+    versions: number;
+    author: string;
 }
 
 const ListItem: React.FC<Props> = (props) => {
-    let {name, description, version, downloads, size} = props;
+    let {name, description, version, downloads, size, added_at, versions, author} = props;
 
     return (
         <div className="ListItem mb-3">
             <div className="card">
                 <div className="card-body">
-                    <h5
-                        style={{ color: '#54b77d' }}
-                        className="card-title mb-3"
-                    >
+                    <h5 className={styles.cardtitle}>
                         {name}
+                        <sup>
+                            <em>v{version}</em>
+                        </sup>
+                        <span style={{ color: 'black' }}>
+                            {' '}
+                            • {author}
+                            <sup>✓</sup>
+                        </span>
                     </h5>
-                    <h6
-                        style={{ color: '#df8230' }}
-                        className="card-subtitle mb-2"
-                    >
-                        {description}
-                    </h6>
+                    <h6 className={styles.cardbody}>{description}</h6>
 
-                    <p>
-                        <em>v{version}</em>
-                    </p>
+                    <p>Versions: {versions}</p>
 
                     <hr />
 
@@ -38,6 +40,8 @@ const ListItem: React.FC<Props> = (props) => {
                         Downloads: {downloads}
                         <br />
                         Size: {size}kb
+                        <br />
+                        <p>Added {added_at}</p>
                     </p>
                 </div>
             </div>
