@@ -37,7 +37,7 @@ const Header: React.FC = () => {
                                 style={{
                                     height: '3em',
                                     fontFamily: 'Ubuntu',
-                                    fontSize: '2em',
+                                    fontSize: '1em',
                                 }}
                             />
                             <label
