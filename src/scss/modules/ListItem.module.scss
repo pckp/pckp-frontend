@@ -1,0 +1,17 @@
+@use "../vars.scss" as *;
+
+// @import "../../../node_modules/bootstrap/scss/grid";
+@use "../bootstrap.scss" as *;
+// @import "../../../node_modules/bootstrap/scss/card";
+
+.cardtitle {
+    color: $primary;
+    @extend .mb-2;
+    @extend .card-title;
+}
+
+.cardbody {
+    color: $secondary;
+    @extend .mb-2;
+    @extend .card-subtitle
+}

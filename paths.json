@@ -6,7 +6,8 @@
             "pages/*": ["./pages/*"],
             "state/*": ["./state/*"],
             "images/*": ["./images/*"],
-            "fonts/*": ["./fonts/*"]
+            "fonts/*": ["./fonts/*"],
+            "scss/*": ["./scss/*"]
         }
     }
 }
