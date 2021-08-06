@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Home: React.FC = () => {
+
     return (
         <div
             style={{ backgroundColor: '#111119', height: '100vh', position: "absolute" }}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, useLocation} from 'react-router-dom'
+import { Switch, Route, useLocation, Redirect} from 'react-router-dom'
 import Search from "pages/Search"
 import TopBar from 'components/TopBar'
 import "scss/index.css"
@@ -28,6 +28,11 @@ const App: React.FC = () => {
 
                 <Route path="/profile">
                     <Profile author="spu7nix" verified={true} />
+                </Route>
+
+                {/* fallback */}
+                <Route path="/">
+                    <Redirect to="/home" />
                 </Route>
             </Switch>
         </>
