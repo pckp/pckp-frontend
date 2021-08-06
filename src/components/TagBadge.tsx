@@ -20,7 +20,7 @@ const TagBadge: React.FC<Tag> = (props) => {
     let {tagName, count} = props;
 
     return (
-        <button type="button" className="btn btn-primary mt-3">
+        <button type="button" className="btn btn-outline-primary mt-3">
             {tagName} <span className="badge bg-secondary">{count}</span>
         </button>
     )
