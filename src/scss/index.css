@@ -6,7 +6,7 @@
         url("fonts/UbuntuMono-BoldItalic.ttf");
 }
 
-.ListItem * {
+* {
     font-family: "Ubuntu"
 }
 
