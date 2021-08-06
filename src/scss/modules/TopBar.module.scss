@@ -1,0 +1,29 @@
+@import 'scss/bootstrap';
+@import 'scss/index.css';
+
+.nav {
+    &Brand {
+        @extend .navbar-brand;
+
+        font-size: 6em;
+
+        & > img {
+            @extend .d-inline-block;
+            @extend .align-text-top;
+
+            width: .85em;
+            height: .85em;
+        }
+
+        & > em {
+            color: white;
+        }
+    }
+}
+
+.nav {
+    &Form {
+        @extend .d-flex;
+        
+    }
+}
