@@ -24,6 +24,13 @@
 .nav {
     &Form {
         @extend .d-flex;
-        
+    }
+
+    &Input {
+        @extend .form-control;
+
+        font-size: 1em;
+        width: 25vw;
+        height: 3em;
     }
 }
