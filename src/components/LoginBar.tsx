@@ -1,19 +1,19 @@
 import React from 'react'
+import styles from "scss/modules/LoginBar.module.scss"
 
 const LoginBar = () => {
     return (
         <div
-            className="container-fluid w-100 p-3 flex-row d-flex justify-content-end"
-            style={{ position: 'absolute', zIndex: 1 }}
+            className={styles.loginBar}
         >
             <div className="me-3">
-                <button type="button" className="btn btn-outline-primary">
+                <button type="button" className={styles.loginBarButtonPrimary}>
                     Register
                 </button>
             </div>
 
             <div className="">
-                <button type="button" className="btn btn-outline-secondary">
+                <button type="button" className={styles.loginBarButtonSecondary}>
                     Login
                 </button>
             </div>

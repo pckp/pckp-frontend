@@ -1,0 +1,31 @@
+@import "scss/bootstrap";
+// @import "scss/vars";
+
+.loginBar {
+    @extend .container-fluid;
+    @extend .w-100;
+    @extend .p-3;
+    @extend .gx-3;
+
+    @extend .flex-row;
+    @extend .d-flex;
+    @extend .justify-content-end;
+
+    position: absolute;
+    top: 0px;
+
+    z-index: 1;
+}
+
+.loginBarButton {
+
+    &Primary {
+        @extend .btn;
+        @extend .btn-outline-primary;
+    }
+    
+    &Secondary {
+        @extend .btn;
+        @extend .btn-outline-secondary;
+    }
+}
