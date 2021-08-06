@@ -1,6 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 
 const Home: React.FC = () => {
+    let history = useHistory();
+    const [search, setSearch] = useState<string>("");
+    
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearch(e.target.value);
+    }
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        history.push("/search?q=" + search);
+    }
 
     return (
         <div
@@ -20,7 +31,7 @@ const Home: React.FC = () => {
                 </p>
             </div>
 
-            <form className="row h-50 d-flex align-items-start justify-content-center">
+            <form className="row h-50 d-flex align-items-start justify-content-center" onSubmit={handleSubmit}>
                 <input
                     type="search"
                     id="search"
@@ -33,8 +44,13 @@ const Home: React.FC = () => {
                         fontSize: '1.5em',
                         display: 'block'
                     }}
+                    onChange={handleChange}
+                    value={search}
                 />
                 <label className="form-label" htmlFor="search"></label>
+
+                {/* dummy input */}
+                <button type='submit' className="d-none"></button>
             </form>
         </div>
     )
