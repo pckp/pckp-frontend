@@ -7,10 +7,10 @@ const TopBar: React.FC = () => {
         <>
             <nav className="navbar" style={{ backgroundColor: '#111119' }}>
                 <div className="container-fluid">
-                    <span className={styles.navBrand}>
+                    <a className={styles.navBrand} href="/home">
                         <img src={pckpimg} alt="pckp" />
                         <em>PCKP</em>
-                    </span>
+                    </a>
                     <form className="d-flex">
                         <input
                             type="search"
