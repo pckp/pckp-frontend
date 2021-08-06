@@ -37,14 +37,25 @@ const Search: React.FC = () => {
                         />
 
                         <ListItem
-                            name={"a".repeat(255)}
+                            name={'a'.repeat(255)}
                             description="The one and only tensor library for spwn"
                             version="0.0.8"
                             downloads={69}
                             size={42}
                             added_at="23/23/56"
                             versions={2}
-                            author="feverdreme"
+                            author={'a'.repeat(255)}
+                        />
+
+                        <ListItem
+                            name={'a'.repeat(255)}
+                            description="The one and only tensor library for spwn"
+                            version="0.0.8"
+                            downloads={69}
+                            size={42}
+                            added_at="23/23/56"
+                            versions={2}
+                            author={'a'.repeat(255)}
                         />
                     </div>
                 </div>
