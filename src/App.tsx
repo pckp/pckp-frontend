@@ -31,7 +31,7 @@ const App: React.FC = () => {
                 </Route>
 
                 {/* fallback */}
-                <Route path="/">
+                <Route exact path="/">
                     <Redirect to="/home" />
                 </Route>
             </Switch>
