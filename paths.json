@@ -7,7 +7,8 @@
             "state/*": ["./state/*"],
             "images/*": ["./images/*"],
             "fonts/*": ["./fonts/*"],
-            "scss/*": ["./scss/*"]
+            "scss/*": ["./scss/*"],
+            "hooks/*": ["./hooks/*"]
         }
     }
 }
