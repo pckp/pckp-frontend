@@ -4,14 +4,26 @@
 @use "../bootstrap.scss" as *;
 // @import "../../../node_modules/bootstrap/scss/card";
 
-.cardtitle {
-    color: $primary;
-    @extend .mb-2;
-    @extend .card-title;
+.card {
+
+    &Title, &Author {
+        display: inline-block;
+        word-wrap: break-word;
+
+        width: inherit; 
+    }
+
+    &Title {
+        color: $primary;
+        @extend .mb-2;
+        @extend .card-title;
+
+        width: inherit;
+    }
 }
 
-.cardbody {
+.cardDesc {
     color: $secondary;
     @extend .mb-2;
-    @extend .card-subtitle
+    @extend .card-subtitle;
 }

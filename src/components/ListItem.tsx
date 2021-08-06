@@ -25,29 +25,27 @@ const ListItem: React.FC<Props> = (props) => {
     } = props
 
     return (
-        <div className="ListItem mb-3">
+        <div className="mb-3">
             <div className="card">
-                <div className="card-body">
-                    <h5
-                        className={styles.cardtitle}
-                        style={{ display: 'inline-block', wordWrap: "break-word", width: "100%" }}
-                    >
+                <div className="card-body w-100">
+                    <h5 className={styles.cardTitle}>
                         {name}
                         <sup>
                             <em>v{version}</em>
                         </sup>
                     </h5>
-                    <h5 style={{ display: 'inline-block', float: 'right' }}>
-                        <span>
-                            {author}
-                            <sup>✓</sup>
-                        </span>
-                    </h5>
-                    <h6 className={styles.cardbody}>{description}</h6>
+                    <h6 className={styles.cardDesc}>{description}</h6>
 
                     <p>Versions: {versions}</p>
 
                     <hr />
+
+                    <p className={styles.cardAuthor}>
+                        <span>
+                            {author}
+                            <sup>✓</sup>
+                        </span>
+                    </p>
 
                     <p>
                         Downloads: {downloads}
