@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Ubuntu";
-    src: url("fonts/UbuntuMono-Regular.ttf"), 
-        url("fonts/UbuntuMono-Bold.ttf"),
-        url("fonts/UbuntuMono-Italic.ttf"),
-        url("fonts/UbuntuMono-BoldItalic.ttf");
+    src: url("../fonts/UbuntuMono-Regular.ttf"), 
+        url("../fonts/UbuntuMono-Bold.ttf"),
+        url("../fonts/UbuntuMono-Italic.ttf"),
+        url("../fonts/UbuntuMono-BoldItalic.ttf");
 }
 
 * {
