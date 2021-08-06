@@ -3,7 +3,7 @@ import React from 'react'
 const Home: React.FC = () => {
     return (
         <div
-            style={{ backgroundColor: '#111119', height: '100vh' }}
+            style={{ backgroundColor: '#111119', height: '100vh', position: "absolute" }}
             className="w-100 container-fluid"
         >
             <div className="row h-50 d-flex align-items-end justify-content-center">
