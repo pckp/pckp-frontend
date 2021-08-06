@@ -4,17 +4,17 @@ import List from "pages/List"
 import Header from 'components/Header'
 import "scss/index.css"
 import Nav from 'components/Nav'
-// import 'bootstrap/dist/css/bootstrap.min.css'
 import "scss/bootstrap.scss"
 import 'bootstrap/dist/js/bootstrap.bundle.min'
 import Profile from 'pages/Profile'
 import Home from "pages/Home"
+import LoginBar from 'components/LoginBar'
 
 const App: React.FC = () => {
 
     return (
         <>
-            {useLocation().pathname.startsWith("/home") ? null : <Header />}
+            {useLocation().pathname.startsWith("/home") ? <LoginBar /> : <Header />}
 
             <Switch>
                 <Route path="/home">
