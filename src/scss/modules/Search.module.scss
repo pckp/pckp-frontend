@@ -1,0 +1,41 @@
+@import 'scss/bootstrap';
+
+.box {
+    @include make-row();
+
+    background-color: #dee2e6;
+
+    &Text {
+        @extend .my-0;
+        @extend .p-3;
+        @extend .fs-5;
+    }
+}
+
+.results {
+    @extend .pt-3;
+
+    &Tags {
+        @extend .mb-3;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .results {
+        @include make-row();
+        @extend .px-lg-0;
+        @extend .gx-lg-3;
+
+        &Tags, &List {
+            @extend .px-lg-3;
+        }
+
+        &Tags {
+            @include make-col(2);
+        }
+
+        &List {
+            @include make-col(10);
+        }
+    }
+}
