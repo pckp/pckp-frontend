@@ -1,9 +1,8 @@
 import React from 'react'
 import { Switch, Route, useLocation} from 'react-router-dom'
 import Search from "pages/Search"
-import Header from 'components/Header'
+import TopBar from 'components/TopBar'
 import "scss/index.css"
-import Nav from 'components/TagList'
 import "scss/bootstrap.scss"
 import 'bootstrap/dist/js/bootstrap.bundle.min'
 import Profile from 'pages/Profile'
@@ -14,7 +13,7 @@ const App: React.FC = () => {
 
     return (
         <>
-            {useLocation().pathname.startsWith('/home') ? null : <Header />}
+            {useLocation().pathname.startsWith('/home') ? null : <TopBar/>}
 
             <LoginBar />
 
