@@ -1,36 +1,62 @@
 @import 'scss/bootstrap';
 @import 'scss/index.css';
 
-.nav {
-    &Brand {
-        @extend .navbar-brand;
+// NAVBRAND
 
-        font-size: 6em;
+.navBrand {
+    @extend .navbar-brand;
 
-        & > img {
-            @extend .d-inline-block;
-            @extend .align-text-top;
+    font-size: 6em;
 
-            width: .85em;
-            height: .85em;
-        }
+    & > img {
+        @extend .d-inline-block;
+        @extend .align-text-top;
 
-        & > em {
-            color: white;
-        }
+        width: 0.85em;
+        height: 0.85em;
+    }
+
+    & > em {
+        color: white;
     }
 }
 
-.nav {
-    &Form {
-        @extend .d-flex;
+// FLEX CONTAINER
+
+.navFlex {
+    @extend .container-fluid;
+
+    // because .navbar > .container-fluid bootstrap
+    display: flex;
+    flex-wrap: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@include media-breakpoint-up(lg) {
+    .navFlex {
+        flex-direction: row;
     }
+}
 
-    &Input {
-        @extend .form-control;
+// FORM
 
-        font-size: 1em;
-        width: 25vw;
-        height: 3em;
+.navForm {
+    @extend .d-flex;
+}
+
+.navInput {
+    @extend .form-control;
+
+    font-size: 1em;
+    width: 25vw;
+    height: 3em;
+}
+
+@include media-breakpoint-down(lg) {
+    .navForm,
+    .navInput {
+        width: 50vw;
     }
 }

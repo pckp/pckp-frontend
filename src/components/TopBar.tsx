@@ -21,7 +21,7 @@ const TopBar: React.FC = () => {
     return (
         <>
             <nav className="navbar" style={{ backgroundColor: '#111119' }}>
-                <div className="container-fluid">
+                <div className={styles.navFlex}> {/* add flex column lg attr for repsonsive */}
                     <a className={styles.navBrand} href="/home">
                         <img src={pckpimg} alt="pckp" />
                         <em>PCKP</em>
