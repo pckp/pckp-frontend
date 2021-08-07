@@ -22,7 +22,7 @@ const TopBar: React.FC = () => {
         <>
             <nav className="navbar" style={{ backgroundColor: '#111119' }}>
                 <div className={styles.navFlex}>
-                    <a className={styles.navBrand} href="/home">
+                    <a className={styles.navBrand} href="/">
                         <img src={pckpimg} alt="pckp" />
                         <em>PCKP</em>
                     </a>

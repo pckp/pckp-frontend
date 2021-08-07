@@ -13,15 +13,11 @@ const App: React.FC = () => {
 
     return (
         <>
-            {useLocation().pathname.startsWith('/home') ? null : <TopBar/>}
+            {useLocation().pathname === '/' ? null : <TopBar/>}
 
             <LoginBar />
 
             <Switch>
-                <Route path="/home">
-                    <Home />
-                </Route>
-
                 <Route path="/search">
                     <Search />
                 </Route>
@@ -32,7 +28,7 @@ const App: React.FC = () => {
 
                 {/* fallback */}
                 <Route exact path="/">
-                    <Redirect to="/home" />
+                    <Home />
                 </Route>
             </Switch>
         </>
