@@ -10,8 +10,8 @@ const Search: React.FC = () => {
     return (
         <>
             <div className="container-fluid">
-                <div className={styles.box}>
-                    <p className={styles.boxText}>
+                <div className={styles.searchBox}>
+                    <p className={styles.searchBoxText}>
                         Search Results for:{' '}
                         <strong>
                             <em>{query}</em>
@@ -19,12 +19,12 @@ const Search: React.FC = () => {
                     </p>
                 </div>
 
-                <div className={styles.results}>
-                    <div className={styles.resultsTags}>
+                <div className={styles.searchResults}>
+                    <div className={styles.searchResultsTags}>
                         <TagList />
                     </div>
 
-                    <div className={styles.resultsList}>
+                    <div className={styles.searchResultsList}>
                         <ListItem
                             name="example package"
                             description="Dolor mollit eiusmod irure culpa dolore incididunt laborum."

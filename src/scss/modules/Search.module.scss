@@ -1,6 +1,6 @@
 @import 'scss/bootstrap';
 
-.box {
+.searchBox {
     @include make-row();
 
     background-color: #dee2e6;
@@ -12,7 +12,7 @@
     }
 }
 
-.results {
+.searchResults {
     @extend .pt-3;
 
     &Tags {
@@ -21,7 +21,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-    .results {
+    .searchResults {
         @include make-row();
         @extend .px-lg-0;
         @extend .gx-lg-3;
