@@ -3,7 +3,7 @@
 .box {
     @include make-row();
 
-    background-color: #dee2e6;
+    background-color: $grey;
 
     &Text {
         @extend .my-0;
