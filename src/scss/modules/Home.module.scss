@@ -1,5 +1,5 @@
-@import "scss/bootstrap";
-@import "scss/index.css";
+@import "../bootstrap";
+@import "../index.css";
 
 .home {
     @extend .container-fluid;

@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route, useLocation, Redirect} from 'react-router-dom'
 import Search from "pages/Search"
 import TopBar from 'components/TopBar'
-import "scss/index.css"
+import "scss/index.scss"
 import "scss/bootstrap.scss"
 import 'bootstrap/dist/js/bootstrap.bundle.min'
 import Profile from 'pages/Profile'
