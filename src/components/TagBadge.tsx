@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from "scss/modules/TagBadge.module.scss"
 
 export interface Tag {
     tagName: string;
@@ -20,8 +21,8 @@ const TagBadge: React.FC<Tag> = (props) => {
     let {tagName, count} = props;
 
     return (
-        <button type="button" className="btn btn-outline-primary mt-3">
-            {tagName} <span className="badge bg-secondary">{count}</span>
+        <button type="button" className={styles.tagButton}>
+            {tagName} <span className={styles.tagBadge}>{count}</span>
         </button>
     )
 }
