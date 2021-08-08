@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     const [search, setSearch] = useState<string>('')
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setSearch(e.target.value)
+        setSearch(e.target.value);
     }
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
