@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/pckp-frontend/static/css/main.a61522b8.chunk.css",
-    "main.js": "/pckp-frontend/static/js/main.8ee42f7e.chunk.js",
-    "main.js.map": "/pckp-frontend/static/js/main.8ee42f7e.chunk.js.map",
+    "main.js": "/pckp-frontend/static/js/main.a13f331c.chunk.js",
+    "main.js.map": "/pckp-frontend/static/js/main.a13f331c.chunk.js.map",
     "runtime-main.js": "/pckp-frontend/static/js/runtime-main.5b6822bc.js",
     "runtime-main.js.map": "/pckp-frontend/static/js/runtime-main.5b6822bc.js.map",
-    "static/js/2.0af54ae0.chunk.js": "/pckp-frontend/static/js/2.0af54ae0.chunk.js",
-    "static/js/2.0af54ae0.chunk.js.map": "/pckp-frontend/static/js/2.0af54ae0.chunk.js.map",
+    "static/js/2.bf378ffe.chunk.js": "/pckp-frontend/static/js/2.bf378ffe.chunk.js",
+    "static/js/2.bf378ffe.chunk.js.map": "/pckp-frontend/static/js/2.bf378ffe.chunk.js.map",
     "index.html": "/pckp-frontend/index.html",
     "static/css/main.a61522b8.chunk.css.map": "/pckp-frontend/static/css/main.a61522b8.chunk.css.map",
-    "static/js/2.0af54ae0.chunk.js.LICENSE.txt": "/pckp-frontend/static/js/2.0af54ae0.chunk.js.LICENSE.txt",
+    "static/js/2.bf378ffe.chunk.js.LICENSE.txt": "/pckp-frontend/static/js/2.bf378ffe.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/pckp-frontend/static/media/UbuntuMono-Regular.f17c0593.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.5b6822bc.js",
-    "static/js/2.0af54ae0.chunk.js",
+    "static/js/2.bf378ffe.chunk.js",
     "static/css/main.a61522b8.chunk.css",
-    "static/js/main.8ee42f7e.chunk.js"
+    "static/js/main.a13f331c.chunk.js"
   ]
 }
