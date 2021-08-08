@@ -1,5 +1,6 @@
 import React from "react";
 import TagBadge, {tagsList} from "components/TagBadge";
+import "scss/modules/TagList.module.scss"
 
 const TagList: React.FC = () => {
     return (
